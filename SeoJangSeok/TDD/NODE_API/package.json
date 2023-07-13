@@ -1,0 +1,19 @@
+{
+  "dependencies": {
+    "body-parser": "^1.20.2",
+    "cross-env": "^7.0.3",
+    "express": "^4.18.2",
+    "morgan": "^1.10.0",
+    "sequelize": "^6.32.1",
+    "sqlite3": "^5.1.6"
+  },
+  "scripts": {
+    "test": "cross-env NODE_ENV=test mocha api/user/user.spec.js -w",
+    "start": "node bin/www.js"
+  },
+  "devDependencies": {
+    "mocha": "^10.2.0",
+    "should": "^13.2.3",
+    "supertest": "^6.3.3"
+  }
+}
